@@ -16,6 +16,12 @@ CLARIFY provides practical tools for feature attribution and visualization for C
 git clone https://github.com/anilatambharii/CLARIFY.git
 cd CLARIFY
 pip install -r requirements.txt
+## If you use Vision Transformers, also install timm:
+pip install timm
+## Run Example Notebook Go to the examples/ folder and launch the attribution example notebook:
+jupyter notebook attribution_example.ipynb
+## Or, if you prefer Python scripts with the sampel imahe file:
+python examples/visualize_cam.py [your sample imaghe].jpg 
 
 ## Quick Start
 Load a pretrained ResNet50, generate Grad-CAM heatmaps, and visualize:
@@ -50,5 +56,6 @@ CLARIFY is licensed under the Apache License 2.0. See the LICENSE file for detai
 ## Contact
 
 Feel free to open issues or reach out via GitHub Discussions for questions, feedback, or collaborations.
+
 
 ---
